@@ -4,4 +4,4 @@
 
 #echo "Updating configuration"
 #(cd $HOME/bundle/git/My-Sweet-Little-Sys && git pull && git submodule update --init --recursive)
-source $HOME/bundle/git/xMachine/nix/dotfile/env.sh
+source $HOME/bundle/config/xmachine/nix/dotfile/env.sh

@@ -116,13 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
 echo Greetings from Kiran Kumar Roy
-source $HOME/bundle/git/xMachine/nix/dotfile/bash/bash-man.sh
+source $HOME/bundle/config/xmachine/nix/dotfile/bash-man/bash-man.sh
 echo ------------------Loading Done!
 G=compute
 U=engineer
 S=\$SHELL
 echo  $G ::: $U :::: $S
 echo ____________________________________
-
