@@ -1,0 +1,18 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+
+# TODO: add conditional user background
+
+PS1='\e[30;43m[\u]\e[0m-\e[30;104m[\w]\e[0m\n\e[30;43m>\e[0m'
+
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+	tmux attach -t default || tmux new -s default
+fi
+
+source /home/compute/bundle/roaming/xmachine/nix/xenv.sh
