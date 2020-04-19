@@ -1,1 +1,1 @@
-source /home/compute/bundle/roaming/xmachine/nix/xenv.sh
+source $HOME/bundle/roaming/xmachine/nix/xenv.sh
