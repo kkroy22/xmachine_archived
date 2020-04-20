@@ -6,16 +6,23 @@ NIXPS1=$PS1
 
 source $HOME/bundle/roaming/xmachine/nix/xenv.sh
 
-ROT='\e[0;30;41m[\u]\e[0m-\e[30;104m[\w]\e[0m\n\e[30;41m>\e[0m'
-REG='\e[0;30;42m[\u]\e[0m-\e[30;104m[\w]\e[0m\n\e[30;42m>\e[0m'
-SUD='\e[0;30;43m[\u]\e[0m-\e[30;104m[\w]\e[0m\n\e[30;43m>\e[0m'
+
+ROTC='\e[0;30;41m'
+REGC='\e[0;30;42m'
+SUDC='\e[0;30;43m'
+DIRC='\e[30;104m'
+ENDC='\e[0m'
+
+ROTPS1="\[$ROTC\][\u]\[$ENDC\]-\[$DIRC\][\w]\[$ENDC\]\n\[$ROTC\]>\[$ENDC\]"
+SUDPS1="\[$SUDC\][\u]\[$ENDC\]-\[$DIRC\][\w]\[$ENDC\]\n\[$SUDC\]>\[$ENDC\]"
+REGPS1="\[$REGC\][\u]\[$ENDC\]-\[$DIRC\][\w]\[$ENDC\]\n\[$REGC\]>\[$ENDC\]"
 
 if [ "$USER" = "root" ]; then
-    PS1=$ROT
+    PS1=$ROTPS1
 elif [ "$USER" = "bikky" ]; then
-    PS1=$SUD
+    PS1=$SUDPS1
 elif [ "$USER" = "compute" ]; then
-    PS1=$REG
+    PS1=$REGPS1
 else
     PS1=$NIXPS1
 fi
