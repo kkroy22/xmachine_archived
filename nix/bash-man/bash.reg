@@ -2,8 +2,9 @@
 #
 # ~/.bashrc
 #
-
+source $HOME/bundle/roaming/xmachine/nix/bash-man/bashman.sh
 # TODO: add conditional user background
+
 
 DEFAULT=$P1
 ROT='\e[30;41m[\u]\e[0m-\e[30;104m[\w]\e[0m\n\e[30;41m>\e[0m'
@@ -26,4 +27,4 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 	tmux attach -t default || tmux new -s default
 fi
 
-source $HOME/bundle/roaming/xmachine/nix/bash-man/bashman.sh
+
