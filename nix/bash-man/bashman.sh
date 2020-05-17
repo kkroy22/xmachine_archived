@@ -1,12 +1,12 @@
-XUR="kkroy22"
+XUR="compute"
 
 if [ "$USER" != $XUR ]; then
-    (cd $HOME/bundle/roaming/xmachine && git pull && git submodule update --init --recursive)
+    (cd $HOME/b/roaming/xmachine && git pull && git submodule update --init --recursive)
 fi
 
 NIXPS1=$PS1
 
-source $HOME/bundle/roaming/xmachine/nix/xenv.sh
+source $HOME/b/roaming/xmachine/nix/xenv.sh
 
 
 ROTC='\e[0;30;41m'
