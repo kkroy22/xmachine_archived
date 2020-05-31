@@ -1,4 +1,4 @@
-XUR="compute"
+XUR="kroy"
 
 if [ "$USER" != $XUR ]; then
     (cd $HOME/b/roaming/xmachine && git pull && git submodule update --init --recursive)
@@ -27,7 +27,7 @@ elif [ "$USER" = "bikky" ]; then
     PS1=$SUDPS1
 elif [ "$USER" = "compute" ]; then
     PS1=$REGPS1
-elif [ "$USER" = "kkroy22" ]; then
+elif [ "$USER" = "kroy" ]; then
     PS1=$OFFPS1
 else
     PS1=$NIXPS1
